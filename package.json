@@ -1,0 +1,25 @@
+{
+  "name": "custom-connect",
+  "version": "1.0.0",
+  "description": "an express js demo of a custom connect platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eobrien-stripe/custom-connect.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eobrien-stripe/custom-connect/issues"
+  },
+  "homepage": "https://github.com/eobrien-stripe/custom-connect#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^5.0.0-alpha.8",
+    "livereload": "^0.9.1"
+  }
+}
