@@ -18,10 +18,24 @@ const app = express();
 app.set('view engine', 'ejs');
 
 
+
 // app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname,"public/index.html"));
+  res.render('index');
+});
+
+app.get('/seller', (req, res) => {
+  res.render('seller', { user: null });
+});
+
+app.get('/login', (req, res) => {
+  res.render('login', {user: null});
+});
+
+// Catch 404 errors and forward to error handler
+app.use((req, res, next) => {
+  res.status(404).render('404');
 });
 
 app.listen(port, () => console.log(`custom-connect listening on port ${port}`));

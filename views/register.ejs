@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <% if (user) { %>
+    already logged in. <a href="/">Home</a>
+  <% } else { %>
+    <form action="/login" method="POST">
+      <label for="username">Username</label>
+      <input type="text" name="username" placeholder="username">
+      <label for="password">Password</label>
+      <input type="password" name="password" placeholder="password">
+      <input type="submit" value="submit">
+    </form>
+  <% } %>
+</body>
+</html>

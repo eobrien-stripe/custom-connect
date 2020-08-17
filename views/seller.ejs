@@ -3,9 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Seller</title>
 </head>
 <body>
-  hello world
+  <% if (user) { %>
+    <h2><%= user.name %></h2>
+  <% } else { %>
+    not logged in. <a href="/">home</a>
+  <% } %>
 </body>
 </html>
