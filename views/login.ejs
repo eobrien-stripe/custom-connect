@@ -6,7 +6,7 @@
   <title>Document</title>
 </head>
 <body>
-  Seller (or admin) login
+  Seller login
   <% if (user) { %>
     <form action="/logout" method="POST">
       <input type="submit" value="logout">
@@ -15,10 +15,9 @@
     <form action="/login" method="POST">
       <label for="username">Username</label>
       <input type="text" name="username" placeholder="username">
-      <label for="password">Password</label>
-      <input type="password" name="password" placeholder="password">
       <input type="submit" value="submit">
     </form>
+    <p><%= message %></p>
   <% } %>
 </body>
 </html>

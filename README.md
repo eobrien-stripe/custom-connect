@@ -17,10 +17,6 @@ endpoints:
 
 /shop navigate the shops
 
-/user customer account pages
-
 /seller for managing the sellers shop account
-
-/admin for managing the platform account
 
 /login for login and logout

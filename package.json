@@ -31,11 +31,15 @@
   },
   "homepage": "https://github.com/eobrien-stripe/custom-connect#readme",
   "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "cookie-session": "^2.0.0-rc.1",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.3",
     "express": "^5.0.0-alpha.8",
+    "express-flash": "0.0.2",
     "livereload": "^0.9.1",
     "lowdb": "^1.0.0",
-    "npm-watch": "^0.6.0"
+    "npm-watch": "^0.6.0",
+    "passport": "^0.4.1"
   }
 }
